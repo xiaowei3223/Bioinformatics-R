@@ -32,4 +32,4 @@ This is for **bioinformatics with R**, the table of content as follow:
 
 [2.6 The GO enrichment of genes](https://github.com/xiaowei3223/Bioinformatics-R/blob/master/chapter2/2.6%20The%20GO%20enrichment%20of%20genes.md)
 
-[2.7 The KEGG enrichment of genes] (https://github.com/xiaowei3223/Bioinformatics-R/blob/master/chapter2/2.7%20The%20KEGG%20enrichment%20of%20genes.md)
+[2.7 The KEGG enrichment of genes](https://github.com/xiaowei3223/Bioinformatics-R/blob/master/chapter2/2.7%20The%20KEGG%20enrichment%20of%20genes.md)
