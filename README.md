@@ -79,7 +79,7 @@ This is for **bioinformatics with R**, the table of content as follow:
 
 [6.1 The SNP association analysis](https://github.com/xiaowei3223/Bioinformatics-R/blob/master/chapter6/6.1%20The%20SNP%20association%20analysis.ipynb)
 
-[6.2 Running association scans for SNPs](https://github.com/xiaowei3223/Bioinformatics-R/blob/master/chapter6/6.2%20Running%20association%20scans%20for%20SNPs.ipynb)
+[6.2 Running association scans for SNPs](https://github.com/xiaowei3223/Bioinformatics-R/blob/master/chapter6/6.1%20The%20SNP%20association%20analysis.ipynb)
 
-[6.3 The whole genome SNP association analysis](https://github.com/xiaowei3223/Bioinformatics-R/blob/master/chapter6/6.3%20The%20whole%20genome%20SNP%20association%20analysis.ipynb)
+[6.3 The whole genome SNP association analysis](https://github.com/xiaowei3223/Bioinformatics-R/blob/master/chapter6/6.1%20The%20SNP%20association%20analysis.ipynb)
 
