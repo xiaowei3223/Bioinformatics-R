@@ -1,0 +1,39 @@
+HGP aimed to determine the sequences that make up human DNA. It was completed in 2003, ahead of schedule and within the budget. However, it did not end there. The project not only seeded the many sequencing projects, but also encouraged the development of technologies that could enable faster and economical sequencing of genomes. A single human genome is not enough to understand genetic information on health; rather, many genomes are required for such studies. The technologies used during the HGP were slow and expensive. The demand for cheaper and faster sequencing methods has driven the development of Next Generation Sequencing (NGS). The NGS platforms perform massively parallel sequencing, where millions of fragments of DNA from a single sample are sequenced in parallel, facilitating high-throughput sequencing. This allows an entire genome to be sequenced faster and at a lower cost.
+
+HGP的目标是确定人类DNA的序列。它于2003年提前完工，在预算之内。然而，它并没有就此结束。该项目不仅为许多测序项目播下了种子，而且鼓励开发能够更快、更经济地进行基因组测序的技术。单一的人类基因组不足以理解有关健康的遗传信息;相反，这类研究需要许多基因组。在HGP期间使用的技术是缓慢和昂贵的。对更便宜、更快测序方法的需求推动了下一代测序技术的发展。NGS平台执行大规模的并行测序，其中来自单个样本的数百万DNA片段被并行测序，从而促进高通量测序。这使得整个基因组的测序速度更快，成本更低。
+
+NGS is a term used to describe a number of different modern sequencing technologies. It includes some popular technologies, explored as follows：
+NGS是一个用来描述许多不同的现代测序技术的术语。它包括一些流行的技术，如下所示：
+Illumina (Solexa) sequencing
+Roche 454 sequencing
+Ion torrent (proton and PGM sequencing)
+SOLiD sequencing
+
+These technologies allow faster and cheaper sequencing of DNA and RNA than the previously used Sanger sequencing, and as such have revolutionized the study of genomics and molecular biology. This chapter will deal with the results obtained from these technologies and some related technologies. To know more on NGS technologies and their application, you can refer to Metzker's Sequencing technologies-the next generation (http://www.nature.com/nrg/journal/v11/n1/full/nrg2626.html).
+
+这些技术使得DNA和RNA的测序比之前使用的Sanger测序更快、更便宜，从而彻底改变了基因组学和分子生物学的研究。本章将讨论从这些技术和一些相关技术中获得的结果。要了解更多关于NGS技术及其应用，你可以参考Metzker的下一代测序技术
+http://www.nature.com/nrg/journal/v11/n1/full/nrg2626.html
+
+
+One of the most popular formats of sequence data in NGS is the FASTQ format. Before we go through the NGS data analysis in detail, it would be interesting to look at the FASTQ data format. The FASTQ data format consists of four lines. The first line is for the sequence name, the second is for the sequence itself, the third is for optional information about the sequence, and the fourth is for a confidence or accuracy measurement of bases. The following screenshot shows an instance of the FASTQ data format：
+
+NGS中最流行的序列数据格式之一是FASTQ格式。在详细讨论NGS数据分析之前，看看FASTQ数据格式会很有趣。FASTQ数据格式由四行组成。第一行是序列名称，第二行是序列本身，第三行是关于序列的可选信息，第四行是对基的置信度或准确性度量。下面的屏幕截图显示了FASTQ数据格式的一个实例：
+
+
+As all the other information in the FASTQ format is rather simple and should be easily understandable, let's discuss the quality scores. The data quality in NGS is measured in terms of a metrics called the Phred score. A Phred score is assigned to each base during the sequencing process; therefore, we have a corresponding character for each base in FASTQ data. Mathematically, the Phred score (Q) is defined as follows:
+
+由于FASTQ格式中的所有其他信息都相当简单，应该很容易理解，所以让我们讨论一下质量分数。NGS中的数据质量是用Phred评分来衡量的。测序过程中给每个碱基分配Phred评分;因此，在FASTQ数据中，每个基都有对应的字符。在数学上，Phred分数(Q)的定义如下：
+
+In the preceding formula, P is the estimated error probability in base call (process of assigning bases to peaks). This establishes a logarithmic relationship between the quality and base calling error, which allows you to work with very small errors (close to zero) and deal in high accuracies numerically. Thus, 99.999 percent (1 in 100,000) accuracy in base calling yields a score equal to 50. To know more about the Phred score, refer to Base-Calling of Automated Sequencer Traces Using Phred. II. Error Probabilities by Ewing and Green
+ (http://genome. cshlp.org/content/8/3/186.long).
+ 
+在上式中，P是基调用(将基分配给峰值的过程)中的估计误差概率。这在质量和基本调用错误之间建立了对数关系，允许您处理非常小的错误(接近于零)，并以数字的方式处理高精度。因此，在基调用中99.999%(10万分之一)的准确率会得到等于50的分数。有关Phred评分的更多信息，请参阅使用Phred的自动排序器跟踪的基调用。误差概率由尤因和格林得到
+(http://genome.cshlp.org/content/8/3/186.long)。
+
+The FASTQ data allows the storage of the sequence and quality information for each read in a compact text-based format. To know more about the FASTQ format, refer to The Sanger FASTQ file format for sequences with quality scores, and the Solexa/Illumina FASTQ variants article by Cock and others (http://nar.oxfordjournals.org/content/38/6/1767.full).
+
+FASTQ数据允许以紧凑的基于文本的格式存储每次读取的序列和质量信息。要了解更多关于FASTQ格式的信息，请参考Sanger FASTQ文件格式中的质量分数序列，以及Cock等人撰写的Solexa/Illumina FASTQ变体文章(http://nar.oxfordjournals.org/content/38/6/1767.full)。
+
+
+
+
